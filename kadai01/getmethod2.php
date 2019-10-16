@@ -35,20 +35,24 @@
             <p>Result: 
             <?php
                 if (isset($_GET['x']) and isset($_GET['y'])) {
-                    if (isset($_GET['type'])) {
-                        if ($_GET['type'] == "tasu") {
-                            echo $_GET['x'] + $_GET['y'];
-                        } elseif ($_GET['type'] == "hiku") {
-                            echo $_GET['x'] - $_GET['y'];
-                        } elseif ($_GET['type'] == "kake") {
-                            echo $_GET['x'] * $_GET['y'];
-                        } elseif ($_GET['type'] == "waru") {
-                            echo $_GET['x'] / $_GET['y'];
-                        } elseif ($_GET['type'] == "amari") {
-                            echo $_GET['x'] % $_GET['y'];
-                        }
+                    if (($_GET['x'] == "") or ($_GET['y'] == "")) {
+                        echo "X,Y 両値を入力してください。";
                     } else {
-                        echo $_GET['x'] + $_GET['y'];
+                        if (isset($_GET['type'])) {
+                            if ($_GET['type'] == "tasu") {
+                                echo $_GET['x'] + $_GET['y'];
+                            } elseif ($_GET['type'] == "hiku") {
+                                echo $_GET['x'] - $_GET['y'];
+                            } elseif ($_GET['type'] == "kake") {
+                                echo $_GET['x'] * $_GET['y'];
+                            } elseif ($_GET['type'] == "waru") {
+                                echo $_GET['x'] / $_GET['y'];
+                            } elseif ($_GET['type'] == "amari") {
+                                echo $_GET['x'] % $_GET['y'];
+                            }
+                        } else {
+                            echo $_GET['x'] + $_GET['y'];
+                        }
                     }
                 } else {
                     echo "X,Y 両値を入力してください。";
