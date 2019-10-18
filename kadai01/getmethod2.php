@@ -35,20 +35,20 @@
             <p>Result: 
             <?php
                 if (isset($_GET['x']) and isset($_GET['y'])) {
-                    if (($_GET['x'] == "") or ($_GET['y'] == "")) {
+                    if (($_GET['x'] == null) or ($_GET['y'] == null)) {
                         echo "X,Y 両値を入力してください。";
                     } else {
                         if (isset($_GET['type'])) {
                             if ($_GET['type'] == "tasu") {
-                                echo $_GET['x'] + $_GET['y'];
+                                echo (int)$_GET['x'] + (int)$_GET['y'];
                             } elseif ($_GET['type'] == "hiku") {
-                                echo $_GET['x'] - $_GET['y'];
+                                echo (int)$_GET['x'] - (int)$_GET['y'];
                             } elseif ($_GET['type'] == "kake") {
-                                echo $_GET['x'] * $_GET['y'];
+                                echo (int)$_GET['x'] * (int)$_GET['y'];
                             } elseif ($_GET['type'] == "waru") {
-                                echo $_GET['x'] / $_GET['y'];
+                                echo (int)$_GET['x'] / (int)$_GET['y'];
                             } elseif ($_GET['type'] == "amari") {
-                                echo $_GET['x'] % $_GET['y'];
+                                echo (int)$_GET['x'] % (int)$_GET['y'];
                             }
                         } else {
                             echo $_GET['x'] + $_GET['y'];
