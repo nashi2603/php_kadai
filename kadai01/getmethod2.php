@@ -16,14 +16,12 @@
                     <p>X:</p> 
                     <input type="text" name="x" size="30" class="form-control">
                 </div>
-                <div class="mx-5">
-                    <select name="type" class="form-control">
-                        <option value="tasu">+ (足し算)</option>
-                        <option value="hiku">- (引き算)</option>
-                        <option value="kake">* (掛け算)</option>
-                        <option value="waru">/ (割り算)</option>
-                        <option value="amari">% (余り)</option>
-                    </select>
+                <div class="mx-5 form-check form-check-inline">
+                    <input class="form-check-input mx-3" type="radio" name="type" value="tasu">+ (足し算)
+                    <input class="form-check-input mx-3" type="radio" name="type" value="hiku">- (引き算)
+                    <input class="form-check-input mx-3" type="radio" name="type" value="kake">* (掛け算)
+                    <input class="form-check-input mx-3" type="radio" name="type" value="waru">/ (割り算)
+                    <input class="form-check-input mx-3" type="radio" name="type" value="amari">% (あまり)
                 </div>
                 <div class="form-group">Y: 
                     <input type="text" name="y" size="30" class="form-control">

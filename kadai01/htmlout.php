@@ -1,4 +1,3 @@
 <?php
-    require "strcomp.php";
-    echo base64_decode(gzuncompress(strcomp(1)));
+    echo base64_decode(gzuncompress(file_get_contents(".gzcomp")));
 ?>
