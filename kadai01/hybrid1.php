@@ -11,9 +11,9 @@
                 setcookie("count", $_COOKIE['count']+1);
                 foreach (range(1, 8) as $i) {
                     if ($i == $_COOKIE['count']) {
-                        echo "<p>Hello, PHP.</p>\n";
+                        echo "<p style=\"color: black;\">Hello, PHP.</p>\n";
                     } else {
-                        echo "<br />\n";
+                        echo "<p style=\"color: silver;\">Hello, PHP.</p>\n";
                     }
                 }
                 if ($_COOKIE['count'] == 8) {
