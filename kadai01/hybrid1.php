@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0;URL='./hybrid1'">
+        <meta http-equiv="refresh" content="0;URL='./hybrid1.php'">
     </head>
     <body>
         <?php
