@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="refresh" content="0;URL='./hybrid1.php'">
+        <!-- ページ表示したときだけしか動かないので多少は許してください！ -->
     </head>
     <body>
         <?php
