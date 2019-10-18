@@ -3,7 +3,7 @@
         if ($i == "REMOTE_HOST") {
             echo gethostbyaddr($_SERVER["REMOTE_ADDR"]) . "<br>";
         } elseif ($i == "REQUEST_TIME") {
-            echo $_SERVER[$i] . " (". date("Y/m/d h/m/s", $_SERVER[$i]) .")<br>";
+            echo $_SERVER[$i] . " (". date("Y/m/d h:m:s", $_SERVER[$i]) .")<br>";
         } else {
             echo $_SERVER[$i] . "<br>";
         }
