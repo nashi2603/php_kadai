@@ -14,7 +14,7 @@
             <form method="GET">
                 <div class="form-group">
                     <p>X:</p> 
-                    <input type="text" name="x" size="30" class="form-control">
+                    <input type="number" name="x" size="30" class="form-control">
                 </div>
                 <div class="mx-5 form-check form-check-inline">
                     <input class="form-check-input mx-3" type="radio" name="type" value="tasu">+ (足し算)
@@ -24,7 +24,7 @@
                     <input class="form-check-input mx-3" type="radio" name="type" value="amari">% (あまり)
                 </div>
                 <div class="form-group">Y: 
-                    <input type="text" name="y" size="30" class="form-control">
+                    <input type="number" name="y" size="30" class="form-control">
                 </div>
                 <p>
                     <input type="submit" value="計算" class="btn btn-primary">

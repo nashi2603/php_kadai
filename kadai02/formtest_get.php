@@ -12,15 +12,10 @@
         <div class="container-fluid px-5">
             <h1 class="text-center my-5">
             <?php
-                $empmsg = "<a href=\"./formtest.php\">formtest.php</a> でメッセージを入力してください。";
-                if (isset($_GET['MESSAGE'])) {
-                    if (empty($_GET['MESSAGE'])) {
-                        echo $empmsg;
-                    } else {
-                        echo $_GET['MESSAGE'];
-                    }
+                if (empty($_GET['MESSAGE'])) {
+                    echo "<a href=\"./formtest.php\">formtest.php</a> でメッセージを入力してください。";
                 } else {
-                    echo $empmsg;
+                    echo $_GET['MESSAGE'];
                 }
             ?>
             </h1>
