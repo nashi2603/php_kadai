@@ -3,7 +3,7 @@
     $cnt = 0;
     // クッキーの確認
     if (isset($_COOKIE['COUNT'])) {
-        $cnt = $_COOKIE['COUNT'];
+      $cnt = $_COOKIE['COUNT'];
     }
     // アクセス毎に1増やす
     $cnt++;
@@ -13,13 +13,13 @@
 ?>
 <!DOCTYPE html>
 <html><head>
-    <meta charset="utf-8">
-    <title>Cookie</title>
+  <meta charset="utf-8">
+  <title>Cookie</title>
 </head>
 <body>
-    <h1>Cookieを使ったカウンタ</h1>
-    <p>
+  <h1>Cookieを使ったカウンタ</h1>
+  <p>
     このページに<?= $cnt ?>回アクセスした
-    </p>
+  </p>
 </body>
 </html>
